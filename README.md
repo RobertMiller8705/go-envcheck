@@ -3,9 +3,8 @@
 ```
 envcheck.go
 ```
+Check the test file next to the implementation to see how it actually works in practice.
 
-Run the Go Envcheck test next to the implementation for concrete examples.
+Your app needs to crash immediately on boot if a required environment variable is missing. This utility handles that without pulling in extra modules.
 
-Fail fast when required environment variables are missing — dependency-free.
-
-Go Envcheck uses only the go standard library; there is no service or dependency to install.
+It relies entirely on the Go standard library. No external services to run, no third-party dependencies to audit. Keeps the build fast and the dependency tree clean.
