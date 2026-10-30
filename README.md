@@ -1,10 +1,10 @@
-# Required-env validator
+# Required env validator
 
 ```
 envcheck.go
 ```
-Check the test file next to the implementation to see how it actually works in practice.
+Check the Go Envcheck tests alongside the implementation to see how it works in practice.
 
-Your app needs to crash immediately on boot if a required environment variable is missing. This utility handles that without pulling in extra modules.
+Failing fast on missing environment variables keeps your deployments predictable. This package handles that without dragging in extra dependencies.
 
-It relies entirely on the Go standard library. No external services to run, no third-party dependencies to audit. Keeps the build fast and the dependency tree clean.
+It runs purely on the Go standard library. You will not need to install any external services or third-party packages.
